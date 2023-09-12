@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Explore",
+    "short_name": "Explore",
     "icons": [
        {
           "src": "/android-chrome-192x192.png",
@@ -8,6 +8,7 @@
           "type": "image/png"
        }
     ],
+    "start_url": "/index.html",
     "theme_color": "#FFFFFF",
     "background_color": "#FFFFFF",
     "display": "standalone"
