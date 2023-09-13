@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v1';
+const CACHE_NAME = 'static-cache-v2';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
     'index.html',
@@ -13,8 +13,8 @@ const FILES_TO_CACHE = [
     'images/bricolage.jpg',
     'images/danse.jpg',
     'images/EnfantPhoto-bg.jpg',
-    'images/entreprise-divider-after.jpg',
-    'images/entreprise-divider.jpg',
+    'images/entreprise-divider-after.png',
+    'images/entreprise-divider.png',
     'images/escalade.jpg',
     'images/guitare.jpg',
     'images/header-explorer.png',
@@ -27,8 +27,8 @@ const FILES_TO_CACHE = [
     'images/piano.jpg',
     'images/piscine.jpg',
     'images/scoutt.jpg',
-    'images/android-chrome-192x192.png',
-    'images/apple-touch-icon.png',
+    'images/icons/android-chrome-192x192.png',
+    'images/icons/apple-touch-icon.png',
     'favicon-16x16.png', 
     'favicon-32x32.png', 
     'favicon.ico', 
