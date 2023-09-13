@@ -1,13 +1,15 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v2';
+const CACHE_NAME = 'static-cache-v3';
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
+    'offline.html', 
     'index.html',
     'activites.html',
     'confirmation.html',
     'devenir-partenaires.html',
     'js/script.js',
     'js/validation.js', 
+    'js/install.js', 
     'images/ballerine.jpg',
     'images/bricolage-2.jpg',
     'images/bricolage.jpg',
@@ -32,12 +34,11 @@ const FILES_TO_CACHE = [
     'favicon-16x16.png', 
     'favicon-32x32.png', 
     'favicon.ico', 
-    'tailwind.config.js', 
-
+    'tailwind.config.js',
+    'css/style.css'
 ];
 self.addEventListener('install', (evt) => {
 console.log('[ServiceWorker] Install');
-// Precache static resources here.
 // Precache static resources here.
 evt.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
@@ -88,7 +89,7 @@ fetch(evt.request)
 .catch(() => {
 return caches.open(CACHE_NAME)
 .then((cache) => {
-return cache.match('/Cochenille/PointNClick/offline.html' );
+return cache.match('/TP3_HubertDelphine/offline.html' );
 });
 })
 );
@@ -107,7 +108,7 @@ fetch(evt.request)
 .catch(() => {
 return caches.open(CACHE_NAME)
 .then((cache) => {
-return cache.match('/Cochenille/PointNClick/offline.html' );
+return cache.match('/TP3_HubertDelphine/offline.html' );
 });
 })
 );
