@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v11';
+const CACHE_NAME = 'static-cache-v12';
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -65,7 +65,7 @@ const FILES_TO_CACHE = [
         .catch(() => {
         return caches.open(CACHE_NAME)
         .then((cache) => {
-        return cache.match('/Cochenille/PointNClick/offline.html' );
+        return cache.match('/TP3_HubertDelphine/offline.html' );
         });
         })
         );
