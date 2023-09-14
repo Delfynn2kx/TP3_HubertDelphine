@@ -19,15 +19,19 @@
 
     <title>Explore : La créativité sans limites</title>
     <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('service-worker.js')
-                    .then((reg) => {
-                        console.log('Service worker registered.', reg);
-                    });
-            });
-        }
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(function(registration) {
+            // Service Worker enregistré avec succès
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(function(error) {
+            // Erreur d'enregistrement du Service Worker
+            console.error('Service Worker registration failed:', error);
+          });
+      }
     </script>
+    
 </head>
 <body>
     <header class="text-gray-600 body-font">
