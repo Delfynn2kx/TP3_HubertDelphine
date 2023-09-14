@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="manifest.json">
     <meta name="description" content="Explore, la créativité sans limites ">
     <meta name="theme-color" content="#FFFFFF"/>
     <!-- Add iOS meta tags and icons -->
@@ -18,6 +18,16 @@
     <link rel="apple-touch-icon" href="images/icons/android-chrome-192x192.png">
 
     <title>Explore : La créativité sans limites</title>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
     <header class="text-gray-600 body-font">
@@ -30,6 +40,7 @@
             <a href="activites.html" class="mr-5 hover:text-gray-900">Activités</a>
             <a href="devenir-partenaires.html" class="mr-5 hover:text-gray-900">Devenir Partenaires</a>
           </nav>
+         <button class="nav-link px-lg-4 px-2" id="butInstall" aria-label="Install" hidden>Installer la PWA</button>
         </div>
         <div class="w-full bg-cover bg-no-repeat bg-center h-screen" style=" background-image: url(images/header-exploreV2.png); ">
           <div class="pt-20 flex items-center justify-center h-full w-full">
@@ -208,4 +219,5 @@
       </div>
    </footer>
 </body>
+    <script src="js/install.js"></script>
 </html>

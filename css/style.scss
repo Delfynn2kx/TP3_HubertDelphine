@@ -46,3 +46,28 @@ main{
 iframe{
     width: 100%;
 }
+
+@media screen and (max-width: 1200px)
+{
+.entreprise-divider::before {
+
+    margin-top: 26px;
+}
+}
+
+@media screen and (max-width: 960px)
+{
+.entreprise-divider::before {
+
+    margin-top: -215px;
+}
+}
+
+
+@media screen and (max-width: 570px)
+{
+.entreprise-divider::before {
+
+    margin-top: -315px;
+}
+}
