@@ -47,7 +47,7 @@ iframe{
     width: 100%;
 }
 
-@media screen and (max-width: 1200px)
+@media screen and (min-width: 1200px)
 {
 .entreprise-divider::before {
 
@@ -55,11 +55,11 @@ iframe{
 }
 }
 
-@media screen and (max-width: 960px)
+@media screen and (min-width: 960px)
 {
 .entreprise-divider::before {
 
-    margin-top: -215px;
+    margin-top: 25px;
 }
 }
 
@@ -70,4 +70,4 @@ iframe{
 
     margin-top: -315px;
 }
-}
+}/*# sourceMappingURL=style.css.map */
