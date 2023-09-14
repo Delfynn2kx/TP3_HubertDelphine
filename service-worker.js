@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v10';
+const CACHE_NAME = 'static-cache-v11';
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -20,7 +20,7 @@ const FILES_TO_CACHE = [
     'images/entreprise-divider.png',
     'images/escalade.jpg',
     'images/guitare.jpg',
-    'images/header-explorer.png',
+    'images/header-exploreV2.png',
     'images/Explore.png',
     'images/musique.jpg',
     'images/parent-1.jpg',
@@ -32,10 +32,12 @@ const FILES_TO_CACHE = [
     'images/scoutt.jpg',
     'images/icons/android-chrome-192x192.png',
     'images/icons/apple-touch-icon.png',
+    'images/icons/icon-144x144.png',
+    'images/icons/icon-192x192.png',
+    'images/icons/icon-512x512.png',    
     'favicon-16x16.png', 
     'favicon-32x32.png', 
     'favicon.ico', 
-    'tailwind.config.js',
     'css/style.css',
     ];
     
