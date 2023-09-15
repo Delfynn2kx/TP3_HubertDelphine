@@ -21,7 +21,6 @@ main{
     background-position: center;
     z-index: 1;
     background-repeat: no-repeat; 
-    margin-top: 56px;
 }
 
 /*.entreprise-divider::after {
@@ -47,27 +46,38 @@ iframe{
     width: 100%;
 }
 
-@media screen and (min-width: 1200px)
+
+
+@media screen and (min-width: 960px) and (max-width: 1200px)
 {
 .entreprise-divider::before {
 
-    margin-top: 26px;
+    margin-top: -195px;
 }
 }
 
-@media screen and (min-width: 960px)
+@media screen and (min-width: 760px) and (max-width: 959px)
 {
 .entreprise-divider::before {
 
-    margin-top: 25px;
+    margin-top: -195px;
 }
 }
 
 
-@media screen and (max-width: 570px)
+@media screen and (min-width: 640px) and (max-width: 770px)
 {
 .entreprise-divider::before {
 
-    margin-top: -315px;
+    margin-top: -525px;
+}
+}
+
+@media screen and (max-width: 639px)
+{
+.entreprise-divider::before {
+
+    margin-top: -355px;
 }
 }/*# sourceMappingURL=style.css.map */
+
